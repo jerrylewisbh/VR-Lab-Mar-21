@@ -1,0 +1,52 @@
+{
+    "name": "XR Input Actions",
+    "maps": [
+        {
+            "name": "Left Hand Controllers",
+            "id": "1a5d45c5-3157-4470-b8b8-eb3cc8a28845",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "52041846-4c97-48eb-86f3-433302e85684",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "b23bcf64-e49d-452c-b1f2-d31328cf4899",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6f1e8c06-fcd2-4f86-85ea-130b62eab823",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe7d42ee-90d0-4476-a36d-eab63a0b3724",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
