@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 467538808333178450}
+  - component: {fileID: 931149444}
+  - component: {fileID: 931149446}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -31,6 +33,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &931149444
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4015804581673978164}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ad88555b58172164a8f1e46d93f7d3f6, type: 3}
+  m_Controller: {fileID: 9100000, guid: bca139cf1c1bfe847a3a9a470ad88ef8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &931149446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4015804581673978164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a9a948abdd6574881acb0f71b82be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flex:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Flex
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 82c7ada9-f40e-41a4-a2d9-118af718b108
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+    m_Reference: {fileID: 7313378557992341735, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1001 &8425955448376213676
 PrefabInstance:
   m_ObjectHideFlags: 0

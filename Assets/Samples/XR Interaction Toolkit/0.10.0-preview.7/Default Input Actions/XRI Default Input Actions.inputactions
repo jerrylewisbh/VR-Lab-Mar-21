@@ -442,6 +442,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Flex",
+                    "type": "Value",
+                    "id": "b5be4999-0a10-4980-92aa-944d2dda762c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -607,6 +615,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Haptic Device",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a55c5600-2089-4d2d-bdcb-908d5d84244e",
+                    "path": "<XRController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flex",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
