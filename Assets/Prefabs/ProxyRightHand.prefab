@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 467538808333178450}
   - component: {fileID: 931149444}
-  - component: {fileID: 931149446}
+  - component: {fileID: -8825941409149886512}
   m_Layer: 0
-  m_Name: RightHand
+  m_Name: ProxyRightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &931149446
+--- !u!114 &-8825941409149886512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,22 +61,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 4015804581673978164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5a9a948abdd6574881acb0f71b82be1, type: 3}
+  m_Script: {fileID: 11500000, guid: bfae8e948742cd14aab28c3cd4ce3ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachTransform: {fileID: 6686404686594798384}
+  attachTransform: {fileID: 0}
   flex:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Flex
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 82c7ada9-f40e-41a4-a2d9-118af718b108
+      m_Id: c15f3098-a7e3-4407-b290-63973de11578
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
-    m_Reference: {fileID: 7313378557992341735, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
 --- !u!1001 &8425955448376213676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,12 +148,6 @@ PrefabInstance:
 --- !u!4 &8315255331840468807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3bc53aa9822f9304c8d6f5a71068d53b,
-    type: 3}
-  m_PrefabInstance: {fileID: 8425955448376213676}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6686404686594798384 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2892965127047754652, guid: 3bc53aa9822f9304c8d6f5a71068d53b,
     type: 3}
   m_PrefabInstance: {fileID: 8425955448376213676}
   m_PrefabAsset: {fileID: 0}

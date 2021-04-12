@@ -30,12 +30,34 @@ public class InteractionPose : MonoBehaviour
 
     public void OnGrab(XRBaseInteractor interactor)
     {
+
+
+        HandVisuals visuals = interactor.GetComponentInChildren<HandVisuals>();
+
+        interactor.attachTransform = visuals.attachTransform;
+
         interactor.GetComponent<XRBaseController>().hideControllerModel = hideController;
         ChangePose(interactionPose, interactor);
+
+
+        ProxyHand proxyHand = GetComponentInChildren<ProxyHand>(true);
+
+        if (proxyHand != null)
+        {
+            proxyHand.Activate();
+        }
+
     }
 
     public void OnRelease(XRBaseInteractor interactor)
     {
+        ProxyHand proxyHand = GetComponentInChildren<ProxyHand>();
+
+        if (proxyHand != null)
+        {
+            proxyHand.Deactivate();
+        }
+
         interactor.GetComponent<XRBaseController>().hideControllerModel = false;
         ChangePose(HandPoses.Idle, interactor);
     }
@@ -56,6 +78,6 @@ public class InteractionPose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

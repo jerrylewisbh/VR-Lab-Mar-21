@@ -17,13 +17,19 @@ public enum HandPoses
 [RequireComponent(typeof(Animator))]
 public class HandVisuals : MonoBehaviour
 {
-    private Animator animator;
+    protected Animator animator;
+
+
+    //TODO use property
+    [SerializeField]
+    public Transform attachTransform;
 
     [SerializeField]
     private InputActionProperty flex;
 
     public void Awake()
     {
+  
         animator = GetComponent<Animator>();
     }
 
